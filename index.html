@@ -5,76 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eymen Uzun - Personal Website</title>
     <style>
-        a { margin-bottom: 15px; }
-        h3 { margin-bottom: 10px;}
-        h2 { margin-bottom: 10px;}
-        h1 { margin-bottom: 10px;}
-        p { margin-bottom: 15px; }
         body {
-            font-family: Arial, sans-serif;
-            margin: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Koyu arka plan */
+            color: #e0e0e0; /* Açık gri metin */
             line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
         }
-        h1, h2, h3 {
-            color: #333;
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #1e1e1e; /* Orta koyuluk */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
-        hr {
-            margin: 10px 0 20px 0;
-            border: 1px solid #ccc;
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
         }
+
+        h2, h3 {
+            color: #cccccc;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
         a {
-            color: #0077cc;
+            color: #90caf9;
             text-decoration: none;
+            transition: all 0.3s ease;
         }
+
         a:hover {
             text-decoration: underline;
+            color: #ffffff;
         }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #333;
+            margin: 20px 0;
+        }
+
         .section {
             margin-bottom: 30px;
         }
-        .section h3 {
-            margin-bottom: 5px;
-        }
+
         .social-links a {
-            margin-right: 15px;
+            margin-right: 20px;
             font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #3a3a3a;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Eymen Uzun - Computer Science Enthusiast</h1>
-    <hr>
+    <div class="container">
+        <h1>Eymen Uzun - Computer Science Enthusiast</h1>
 
-    <div class="section">
-        <h3>About Me:</h3>
-        <p>I am currently a high school student and I am trying to improve myself in software and English.</p>
-    </div>
+        <div class="section">
+            <h3>About Me:</h3>
+            <p>I am currently a high school student and I am trying to improve myself in software and English.</p>
+        </div>
 
-    <div class="section">
-        <h3>My Projects:</h3>
-        <p>
-            You can find my projects on my GitHub account: 
-            <a href="https://github.com/eymen-uzun" target="_blank" title="My GitHub Projects">GitHub</a>
-        </p>
-    </div>
+        <div class="section">
+            <h3>My Projects:</h3>
+            <p>
+                You can find my projects on my GitHub account: 
+                <a href="https://github.com/eymen-uzun" target="_blank" title="My GitHub Projects">GitHub</a>
+            </p>
+        </div>
 
-    <div class="section">
-        <h3>CV:</h3>
-        <p>Python Training (2025) - IIENSTITU</p>
-        <p>Certificate ID: NST-1167-3126-2014</p>
-        <a href="https://www.iienstitu.com/tr/sertifika-sorgulama" target="_blank" title="Certificate Verification">Verification Link</a>
-    </div>
+        <div class="section">
+            <h3>CV:</h3>
+            <p>Python Training (2025) - IIENSTITU</p>
+            <p>Certificate ID: NST-1167-3126-2014</p>
+            <a href="https://www.iienstitu.com/tr/sertifika-sorgulama" target="_blank" title="Certificate Verification">Verification Link</a>
+        </div>
 
-    <div class="section">
-        <h3>Social Media:</h3>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/eymen-uzun-151b03384/" target="_blank" title="LinkedIn Profilim">
-                LinkedIn
-            </a>
+        <div class="section">
+            <h3>Social Media:</h3>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/eymen-uzun-151b03384/" target="_blank" title="LinkedIn Profilim">
+                    LinkedIn
+                </a>
+            </div>
         </div>
     </div>
 </body>
 </html>
-
